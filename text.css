@@ -1,0 +1,229 @@
+h1 {
+  text-align: center;
+}
+.box {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  padding: 15px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 50px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.alignl-text {
+  text-align: left;
+}
+
+.alignc-text {
+  text-align: center;
+}
+
+.alignr-text {
+  text-align: right;
+}
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.indent-text {
+  text-indent: 2em;
+}
+
+.outdent-text {
+  text-indent: -2em;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.menu1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 1px;
+}
+
+.menu-button {
+  padding: 10px 15px;
+
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  background-color: #2980b9;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 130px;
+  height: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.sub-menu .sub-menu-button {
+  margin: 10px 0;
+}
+
+.menu-button:hover .sub-menu {
+  display: block;
+}
+.sub-menu-button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.sub-menu-button:hover {
+  background-color: #1864a5;
+}
+.menu-button1 {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+header {
+  background-color: #222;
+  padding: 10px 0;
+}
+.box1 {
+  width: 791px;
+
+  height: 67px;
+  border: 2px solid black;
+  padding: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+#textArea {
+  width: 97.5%;
+  height: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 0.5px;
+  margin-right: px;
+}
+.menu-button1 {
+  padding: 10px 15px;
+
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-button1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-button1:hover {
+  background-color: #2980b9;
+}
+.sub-menu1 {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  white-space: nowrap;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.sub-menu1 .sub-menu-button1 {
+  margin: 5px 0;
+}
+
+.menu-button1:hover .sub-menu1 {
+  display: block;
+}
+.font-family-dropdown button {
+  padding: 3px;
+  font-size: 14px;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: black;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.font-family-dropdown ul.font-family-options {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  z-index: 2;
+}
+
+.font-family-dropdown ul.font-family-options li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.font-family-dropdown ul.font-family-options li:hover {
+  background-color: #2980b9;
+}
+.font-size-dropdown label {
+  margin-left: 30px;
+  color: white;
+}
+
+.font-size-dropdown select {
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  margin-left: 30px;
+}

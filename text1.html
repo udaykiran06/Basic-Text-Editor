@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    
+        <h1>Text Editor</h1>
+    <div class="box">
+        <header>
+            <nav>
+              <ul class="menu">
+                <li class="menu-button" id="fileButton">File
+                  <ul class="sub-menu">
+                      <button class="sub-menu-button" id="newDocumentButton"><i class="fa-solid fa-file"></i>    New Document</button>
+                      <button class="sub-menu-button" id="printButton"><i class="fa-solid fa-print"></i>    Print</button>
+                      <button class="sub-menu-button" id="saveButton"><i class="fa-solid fa-floppy-disk"></i>    Save</button>
+                  </ul>
+              </li>
+                
+                <li class="menu-button" id="editButton">Edit
+                  <ul class="sub-menu">
+                    <button class="sub-menu-button" id="undoButton"><i class="fa-solid fa-arrow-rotate-left"></i>   Undo</button>
+                    <button class="sub-menu-button" id="cutButton"><i class="fa-solid fa-scissors"></i>   Cut</button>
+                    <button class="sub-menu-button" id="copyButton"><i class="fa-solid fa-copy"></i>    Copy</button>
+                    <button class="sub-menu-button" id="pasteButton"><i class="fa-solid fa-paste"></i>    Paste</button>
+                </ul>
+                </li>
+                <li class="menu-button" id="viewButton">View
+                  <ul class="sub-menu">
+                    <button class="sub-menu-button" id="FullScreenButton"><i class="fa-solid fa-expand"></i>      FullScreen</button>
+                    <button class="sub-menu-button" id="previewButton"><i class="fa-solid fa-eye"></i>    Preview</button>   
+                  </ul>
+                </li>
+                <li class="menu-button" id="insertButton">Insert
+                  <ul class="sub-menu">
+                    <button class="sub-menu-button" id="imageButton">
+                      <i class="fa-solid fa-image"></i> Image
+                  </button>
+                  <input type="file" id="imageInput" style="display: none;" accept="image/*">
+                    <button class="sub-menu-button" id="linkButton"><i class="fa-solid fa-link"></i>     Link</button>
+                      
+                </ul>
+                </li>
+                <li class="menu-button" id="toolsButton">Tools
+                  <ul class="sub-menu">
+                    <button class="sub-menu-button" id="scButton"><i class="fa-solid fa-code"></i>    Sourcecode</button>
+                    <button class="sub-menu-button" id="wcButton"><i class="fa-solid fa-list-ol"></i>     wordcount</button>
+                    </ul>
+                </li> 
+              </ul>
+            </nav>
+          </header>    
+      <div class="box1">
+        <header>
+          <nav>
+            <ul class="menu">
+              <button class="menu-button1" id="BoldButton"><i class="fa-solid fa-bold">
+                
+              </i>
+            </button>
+            
+              <button class="menu-button1" id="underlineButton"><i class="fa-solid fa-underline">
+              
+              </i>                
+            </button>
+              <button class="menu-button1" id="alignlButton"><i class="fa-solid fa-align-left">
+                
+              </i>                
+            </button>
+              <button class="menu-button1" id="aligncButton"><i class="fa-solid fa-align-center">
+                
+              </i>
+            </button>
+              <button class="menu-button1" id="alignrButton"><i class="fa-solid fa-align-right">
+                
+              </i>              
+            </button> 
+              <button class="menu-button1" id="justifyButton"><i class="fa-solid fa-align-justify">
+                
+              </i>              
+            </button> 
+              <button class="menu-button1" id="indentButton"><i class="fa-solid fa-indent">
+               
+              </i>              
+            </button> 
+              <button class="menu-button1" id="outdentButton"><i class="fa-solid fa-outdent">
+               
+              </i>              
+            </button> 
+              <li class="font-family-dropdown">
+               
+                <button id="font-family-button">Font Family ▼</button>
+                <ul class="font-family-options">
+                    <li data-font="Arial">Arial</li>
+                    <li data-font="Helvetica">Helvetica</li>
+                    <li data-font="Times New Roman">Times New Roman</li>
+                    <li data-font="Courier New">Courier New</li>
+                    <li data-font="Roboto">Roboto</li>
+                    <li data-font="Georgia">Georgia</li>
+                    <li data-font="Open Sans">Open Sans</li>
+                    <li data-font="Lato">Lato</li>
+                    
+                </ul>
+              
+            </li>
+            <li class="font-size-dropdown">
+              <label for="font-size">FontSize</label>
+              <select id="font-size">
+                  <option value="8">8</option>
+                  <option value="10">10</option>
+                  <option value="12">12</option>
+                  <option value="14">14</option>
+                  <option value="18">14</option>
+                  <option value="24">24</option>
+                  <option value="36">36</option>
+              </select>
+          </li>
+          
+
+            </ul>
+          </nav>
+        </header>    
+      </div> 
+        <textarea id="textArea" rows="5" cols="50"></textarea> 
+    <!-- </div>  -->
+    <script src="text.js"></script>
+</body>
+</html>
